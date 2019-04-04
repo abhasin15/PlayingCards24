@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="PlayingCardsController">
+   <children>
+      <Pane prefHeight="425.0" prefWidth="585.0">
+         <children>
+            <Button layoutX="455.0" layoutY="364.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="107.0" text="Verify" />
+            <Button layoutX="23.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="206.0" text="Find a Solution" />
+            <Button layoutX="427.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="135.0" text="Refresh" />
+            <TextField layoutX="237.0" layoutY="19.0" prefHeight="34.0" prefWidth="182.0" />
+            <TextField layoutX="194.0" layoutY="369.0" prefHeight="34.0" prefWidth="242.0" />
+            <Label layoutX="23.0" layoutY="364.0" prefHeight="44.0" prefWidth="161.0" text="Enter an expression:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="216.0" fitWidth="126.0" layoutX="41.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <PerspectiveTransform />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="216.0" fitWidth="126.0" layoutX="202.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <PerspectiveTransform />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="216.0" fitWidth="126.0" layoutX="436.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <PerspectiveTransform />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="216.0" fitWidth="126.0" layoutX="215.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <PerspectiveTransform />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
