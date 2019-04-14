@@ -1,3 +1,4 @@
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -48,6 +49,12 @@ public class PlayingCardsController {
 		
 		
 	}
-	
+	// Adam ActionEvent method to clear text field when button is pressed
+	// Adam id anc clr event defined in scenebuilder 
+	public void clear (ActionEvent clr) {
+		
+		clrTxt.setText(null);
+		
+	}
 
 }
