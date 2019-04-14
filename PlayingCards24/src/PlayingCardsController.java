@@ -28,6 +28,9 @@ public class PlayingCardsController {
 	public class Cards extends PlayingCardsController {
 		
 		// Adam randomly select from 52 cards
+		// Adam Math.Random returns random number greater than 0
+		// Adam Math.Floor returns largest integer that is less than or equal to
+		// Adam the math.random argument
         int card = (int) (Math.floor(Math.random() * 51) + 1);
 		
 		// Adam display 4 cards using ImageView. use getImage method to draw cards from folder in project
