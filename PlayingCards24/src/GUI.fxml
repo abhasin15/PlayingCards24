@@ -20,7 +20,7 @@
                <font>
                   <Font name="System Bold" size="17.0" />
                </font></Button>
-            <Button id="clrTxt" fx:id="clrTxt" layoutX="427.0" layoutY="14.0" mnemonicParsing="false" onAction="#clr" prefHeight="44.0" prefWidth="135.0" style="-fx-background-color: #0ab80b; -fx-border-style: solid; -fx-border-width: 2;" text="Refresh">
+            <Button id="clrTxt" fx:id="clrTxt" layoutX="427.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="135.0" style="-fx-background-color: #0ab80b; -fx-border-style: solid; -fx-border-width: 2;" text="Refresh">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font></Button>
