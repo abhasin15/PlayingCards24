@@ -21,40 +21,36 @@ public class PlayingCardsController {
 
 	private ImageView card1,card2,card3,card4; //ayush
 
-	public void setColor(){
-
-	}
-
 	// Adam added class to randomly pick cards
-	public class Cards extends PlayingCardsController {
-		
-		// Adam randomly select from 52 cards
-		// Adam Math.Random returns random number greater than 0
-		// Adam Math.Floor returns largest integer that is less than or equal to
-		// Adam the math.random argument
-        int card = (int) (Math.floor(Math.random() * 51) + 1);
-		
-		// Adam display 4 cards using ImageView. use getImage method to draw cards from folder in project
-        public Image card1 = new ImageView("/PlayingCards24/src/cards" +
-		card + ".png").getImage();
-        
-        public Image card2 = new ImageView("/PlayingCards24/src/cards" +
-        		card + ".png").getImage();
-        
-        public Image card3 = new ImageView("/PlayingCards24/src/cards" +
-        		card + ".png").getImage();
-        
-        public Image card4 = new ImageView("/PlayingCards24/src/cards" +
-        		card + ".png").getImage();
-		
-		
-	}
-	// Adam ActionEvent method to clear text field when button is pressed
-	// Adam id anc clr event defined in scenebuilder 
-	public void clear (ActionEvent clr) {
-		
-		clrTxt.setText(null);
-		
-	}
+		public class Cards extends PlayingCardsController {
+			
+			// Adam randomly select from 52 cards
+			// Adam Math.Random returns random number greater than 0
+			// Adam Math.Floor returns largest integer that is less than or equal to
+			// Adam the math.random argument
+	        int card = (int) (Math.floor(Math.random() * 51) + 1);
+			
+			// Adam display 4 cards using ImageView. use getImage method to draw cards from folder in project
+	        public Image card1 = new ImageView("/PlayingCards24/src/cards" +
+			card + ".png").getImage();
+	        
+	        public Image card2 = new ImageView("/PlayingCards24/src/cards" +
+	        		card + ".png").getImage();
+	        
+	        public Image card3 = new ImageView("/PlayingCards24/src/cards" +
+	        		card + ".png").getImage();
+	        
+	        public Image card4 = new ImageView("/PlayingCards24/src/cards" +
+	        		card + ".png").getImage();
+			
+			
+		}
+		// Adam ActionEvent method to clear text field when button is pressed
+		// Adam id anc clr event defined in scenebuilder 
+		public void clear (ActionEvent clr) {
+			
+			clrTxt.setText(null);
+			
 
+		}
 }
