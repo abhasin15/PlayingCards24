@@ -14,29 +14,52 @@
    <children>
       <Pane prefHeight="425.0" prefWidth="585.0">
          <children>
-            <Button fx:id="chkTxt" layoutX="455.0" layoutY="364.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #0ab80b; -fx-border-style: solid; -fx-border-width: 2;" text="Verify">
+            <Button fx:id="chkTxt" layoutX="455.0" layoutY="364.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #059700;" text="Verify" />
+            <Button fx:id="solveTxt" layoutX="23.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="206.0" style="-fx-background-color: #059700;" text="Find a Solution" />
+            <Button fx:id="clrTxt" layoutX="427.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="135.0" style="-fx-background-color: #059700;" text="Refresh" />
+            <TextField fx:id="ansField" layoutX="237.0" layoutY="19.0" prefHeight="34.0" prefWidth="182.0" style="-fx-border-color: #059700;" />
+            <TextField fx:id="entryField" layoutX="194.0" layoutY="369.0" prefHeight="34.0" prefWidth="242.0" style="-fx-border-color: #059700;" />
+            <Label fx:id="enterLbl" layoutX="23.0" layoutY="364.0" prefHeight="44.0" prefWidth="161.0" text="Enter an expression:" textFill="#059700">
                <font>
-                  <Font name="System Bold" size="17.0" />
-               </font></Button>
-            <Button fx:id="solveTxt" layoutX="23.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="206.0" style="-fx-background-color: #0ab80b; -fx-border-style: solid; -fx-border-width: 2;" text="Find a Solution">
-               <font>
-                  <Font name="System Bold" size="17.0" />
-               </font></Button>
-            <Button fx:id="clrTxt" layoutX="427.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="135.0" style="-fx-background-color: #0ab80b; -fx-border-style: solid; -fx-border-width: 2;" text="Refresh">
-               <font>
-                  <Font name="System Bold" size="17.0" />
-               </font></Button>
-            <TextField fx:id="ansField" layoutX="237.0" layoutY="19.0" prefHeight="34.0" prefWidth="182.0" style="-fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #0ab80b;" />
-            <TextField fx:id="entryField" layoutX="194.0" layoutY="369.0" prefHeight="34.0" prefWidth="242.0" style="-fx-border-width: 2; -fx-border-style: solid; -fx-border-color: #0ab80b;" />
-            <Label fx:id="enterLbl" layoutX="14.0" layoutY="364.0" prefHeight="44.0" prefWidth="161.0" text="Enter an expression:" textFill="#31a155">
-               <font>
-                  <Font name="System Bold" size="16.0" />
+                  <Font size="16.0" />
                </font>
             </Label>
-            <VBox fx:id="card4" layoutX="449.0" layoutY="113.0" prefHeight="200.0" prefWidth="120.0" style="-fx-border-style: solid; -fx-border-width: 2;" />
-            <VBox fx:id="card3" layoutX="307.0" layoutY="113.0" prefHeight="200.0" prefWidth="120.0" style="-fx-border-style: solid; -fx-border-width: 2;" />
-            <VBox fx:id="card2" layoutX="162.0" layoutY="113.0" prefHeight="200.0" prefWidth="120.0" style="-fx-border-style: solid; -fx-border-width: 2;" />
-            <VBox fx:id="card1" layoutX="14.0" layoutY="113.0" prefHeight="200.0" prefWidth="120.0" style="-fx-border-style: solid; -fx-border-width: 2;" />
+            <VBox layoutX="8.0" layoutY="96.0" style="-fx-border-color: black;">
+               <children>
+                  <ImageView fx:id="card1" fitHeight="216.0" fitWidth="126.0" layoutX="23.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <PerspectiveTransform />
+                     </effect>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox layoutX="154.0" layoutY="96.0" style="-fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="216.0" fitWidth="126.0" layoutX="160.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <PerspectiveTransform />
+                     </effect>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox layoutX="299.0" layoutY="96.0" style="-fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="216.0" fitWidth="126.0" layoutX="432.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <PerspectiveTransform />
+                     </effect>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox layoutX="445.0" layoutY="96.0" style="-fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="216.0" fitWidth="126.0" layoutX="442.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <PerspectiveTransform />
+                     </effect>
+                  </ImageView>
+               </children>
+            </VBox>
          </children>
       </Pane>
    </children>
