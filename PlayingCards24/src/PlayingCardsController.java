@@ -30,10 +30,7 @@ public class PlayingCardsController {
     @FXML
     private ImageView card4;
 
-	public void setColor(){
-
-	}
-
+	
 	
 	// Adam added class to randomly pick cards
 	public class Cards extends PlayingCardsController {
@@ -64,6 +61,7 @@ public class PlayingCardsController {
     void loadImages(ActionEvent event) {
     	int card = (int) (Math.floor(Math.random() * 7) + 1);
     	card1.setImage(new ImageView("cards/"+card+"_of_clubs.png").getImage());
+    	card2.setImage(new ImageView("cards/"+card+"_of_hearts.png").getImage());
     }
 	
 	// Adam ActionEvent method to clear text field when button is pressed

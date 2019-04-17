@@ -38,25 +38,34 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <VBox fx:id="vbox4" layoutX="449.0" layoutY="127.0" prefHeight="163.0" prefWidth="120.0" style="-fx-border-style: solid; -fx-border-width: 2;">
+            <VBox fx:id="vbox4" layoutX="442.0" layoutY="126.0" prefHeight="163.0" prefWidth="120.0" style="-fx-border-style: solid; -fx-border-width: 2;">
                <children>
                   <ImageView fx:id="card4" fitHeight="232.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@cards/2_of_clubs.png" />
                      </image></ImageView>
                </children></VBox>
-            <VBox fx:id="vbox3" layoutX="320.0" layoutY="125.0" prefHeight="172.0" prefWidth="120.0" style="-fx-border-style: solid; -fx-border-width: 2;">
+            <VBox fx:id="vbox3" layoutX="299.0" layoutY="125.0" prefHeight="172.0" prefWidth="120.0" style="-fx-border-style: solid; -fx-border-width: 2;">
                <children>
-                  <ImageView fx:id="card3" fitHeight="196.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="card3" fitHeight="196.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cards/queen_of_hearts.png" />
+                     </image></ImageView>
                </children></VBox>
-            <VBox fx:id="vbox2" layoutX="162.0" layoutY="113.0" prefHeight="200.0" prefWidth="120.0" style="-fx-border-style: solid; -fx-border-width: 2;">
+            <VBox fx:id="vbox2" layoutX="160.0" layoutY="125.0" prefHeight="173.0" prefWidth="119.0" style="-fx-border-style: solid; -fx-border-width: 2;">
                <children>
-                  <ImageView fx:id="card2" fitHeight="194.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="card2" fitHeight="167.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cards/ace_of_spades.png" />
+                     </image></ImageView>
                </children>
             </VBox>
-            <VBox fx:id="vbox1" layoutX="14.0" layoutY="113.0" prefHeight="200.0" prefWidth="135.0" style="-fx-border-style: solid; -fx-border-width: 2;">
+            <VBox fx:id="vbox1" layoutX="23.0" layoutY="124.0" prefHeight="167.0" prefWidth="116.0" style="-fx-border-style: solid; -fx-border-width: 2;">
                <children>
-                  <ImageView fx:id="card1" fitHeight="196.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="card1" fitHeight="171.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cards/king_of_spades.png" />
+                     </image></ImageView>
                </children></VBox>
          </children>
       </Pane>
