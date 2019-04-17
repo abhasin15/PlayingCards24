@@ -1,3 +1,5 @@
+import java.io.File;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -19,12 +21,20 @@ public class PlayingCardsController {
 
 	private VBox vbox1,vbox2,vbox3,vbox4;
 
-	private ImageView card1,card2,card3,card4; //ayush
+    @FXML
+    private ImageView card1;
+    @FXML
+    private ImageView card2;
+    @FXML
+    private ImageView card3;
+    @FXML
+    private ImageView card4;
 
 	public void setColor(){
 
 	}
 
+	
 	// Adam added class to randomly pick cards
 	public class Cards extends PlayingCardsController {
 		
@@ -49,6 +59,13 @@ public class PlayingCardsController {
 		
 		
 	}
+	
+    @FXML
+    void loadImages(ActionEvent event) {
+    	int card = (int) (Math.floor(Math.random() * 7) + 1);
+    	card1.setImage(new ImageView("cards/"+card+"_of_clubs.png").getImage());
+    }
+	
 	// Adam ActionEvent method to clear text field when button is pressed
 	// Adam id anc clr event defined in scenebuilder 
 	public void clear (ActionEvent clr) {
