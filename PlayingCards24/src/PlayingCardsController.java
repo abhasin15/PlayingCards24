@@ -57,11 +57,28 @@ public class PlayingCardsController {
 		
 	}
 	
+	
+	
+	
+	
+	
+	
     @FXML
     void loadImages(ActionEvent event) {
     	int card = (int) (Math.floor(Math.random() * 7) + 1);
+    	int cardTwo = (int) (Math.floor(Math.random() * 7) + 1);
+    	int cardThree = (int) (Math.floor(Math.random() * 7) + 1);
+    	int cardFour = (int) (Math.floor(Math.random() * 7) + 1);
     	card1.setImage(new ImageView("cards/"+card+"_of_clubs.png").getImage());
+//<<<<<<< HEAD
     	card2.setImage(new ImageView("cards/"+card+"_of_hearts.png").getImage());
+//=======
+    	card2.setImage(new ImageView("cards/"+cardTwo+"_of_clubs.png").getImage());
+    	
+    	card3.setImage(new ImageView("cards/"+cardThree+"_of_clubs.png").getImage());
+    	
+    	card4.setImage(new ImageView("cards/"+cardFour+"_of_clubs.png").getImage());
+//>>>>>>> refs/remotes/origin/master
     }
 	
 	// Adam ActionEvent method to clear text field when button is pressed
@@ -70,6 +87,6 @@ public class PlayingCardsController {
 		
 		clrTxt.setText(null);
 		
-	}
+	
 
-}
+}}
