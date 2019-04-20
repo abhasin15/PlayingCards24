@@ -17,6 +17,5 @@ public class PlayingCardsDriver extends Application {
 		primaryStage.setScene(sn); // scene is sent to stage
 		primaryStage.show(); // displays the scene on stage
 
-		
 	}
 }
