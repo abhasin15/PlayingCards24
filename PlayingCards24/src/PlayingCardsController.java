@@ -56,8 +56,10 @@ public class PlayingCardsController {
 		
 		
 	}
-	
-	
+	// Adam array to hold "rank" of cards
+	// needs to convert cards ACE = 1, 11 = jack, 12 = queen, 13 is king
+	private static String[] rank  = { "Ace", "2", "3", "4", "5", "6", "7", 
+			"8", "9", "10", "Jack", "Queen", "King" };
 	
 	
 	
