@@ -19,6 +19,7 @@ import javafx.scene.paint.Color;
 
 public class PlayingCardsController {
 
+	static String rand = "";
 
 	@FXML
 	private Button solveTxt,clrTxt,chkTxt; //ayush
@@ -39,34 +40,30 @@ public class PlayingCardsController {
     private ImageView card4;
 
     @FXML
-    public String imgFields()
+    public static String imgFields()
     {
-    	List<String> imgNames= new ArrayList<>();
-    	imgNames.add("_of_clubs.png");
-    	imgNames.add("_of_diamonds.png");
-    	imgNames.add("_of_hearts.png");
-    	imgNames.add("_of_spades.png");
+    	String[] cardTypes = {"_of_clubs.png", "_of_diamonds.png", "_of_hearts.png", "_of_spades.png"};
     	Random r = new Random();
-    	String rand = imgNames.get(r.nextInt(imgNames.size()));
+    	rand = cardTypes[r.nextInt(cardTypes.length)];
 		return rand;
-		// imgNames
     }
 
     @FXML
     void loadImages(ActionEvent event) {
-    	int card = (int) (Math.floor(Math.random() * 7) + 1);
-    	int cardTwo = (int) (Math.floor(Math.random() * 7) + 1);
-    	int cardThree = (int) (Math.floor(Math.random() * 7) + 1);
-    	int cardFour = (int) (Math.floor(Math.random() * 7) + 1);
+    	
+    	int card = (int) (Math.floor(Math.random() * 13) + 1);
+    	int cardTwo = (int) (Math.floor(Math.random() * 13) + 1);
+    	int cardThree = (int) (Math.floor(Math.random() * 13) + 1);
+    	int cardFour = (int) (Math.floor(Math.random() * 13) + 1);
 
-    	card1.setImage(new ImageView("cards/"+card+"_of_clubs.png").getImage());
+    	card1.setImage(new ImageView("cards/"+card+imgFields()).getImage());
 
-    	card2.setImage(new ImageView("cards/"+cardTwo+"_of_hearts.png").getImage());
+    	card2.setImage(new ImageView("cards/"+cardTwo+imgFields()).getImage());
 
 
-    	card3.setImage(new ImageView("cards/"+cardThree + "_of_clubs.png").getImage());
+    	card3.setImage(new ImageView("cards/"+cardThree + imgFields()).getImage());
 
-    	card4.setImage(new ImageView("cards/"+cardFour + "_of_clubs.png").getImage());
+    	card4.setImage(new ImageView("cards/"+cardFour + imgFields()).getImage());
 
     }
 
