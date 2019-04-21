@@ -5,14 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-=======
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Random;
 
->>>>>>> refs/remotes/origin/cardImgs
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -74,11 +67,10 @@ public class PlayingCardsController {
     	card3.setImage(new ImageView("cards/"+cardThree + "_of_clubs.png").getImage());
 
     	card4.setImage(new ImageView("cards/"+cardFour + "_of_clubs.png").getImage());
-//>>>>>>> refs/remotes/origin/master
+
     }
 
-	// Adam ActionEvent method to clear text field when button is pressed
-	// Adam id anc clr event defined in scenebuilder
+
 	public void clear (ActionEvent clr) {
 
 		clrTxt.setText(null);
