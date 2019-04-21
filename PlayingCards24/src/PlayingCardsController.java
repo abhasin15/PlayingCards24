@@ -18,6 +18,8 @@ import javafx.scene.paint.Color;
 
 
 public class PlayingCardsController {
+	
+	
 
 	static String rand = "";
 
@@ -38,6 +40,12 @@ public class PlayingCardsController {
     private ImageView card3;
     @FXML
     private ImageView card4;
+    
+    public void startImgs() // this needs to work to show startup imgs
+	{
+    	//int rando =(int) (Math.floor(Math.random() * 13) + 1);
+		card1.setImage(new ImageView("cards/11_of_diamonds.png").getImage());
+	}
 
     @FXML
     public static String imgFields()
@@ -47,11 +55,20 @@ public class PlayingCardsController {
     	rand = cardTypes[r.nextInt(cardTypes.length)];
 		return rand;
     }
+    
+   //constructor to load random images at start of game
+    
 
     @FXML
     void loadImages(ActionEvent event) {
-    	
-    	int card = (int) (Math.floor(Math.random() * 13) + 1);
+    	ImageView fourCardStack[] = {card1,card2,card3,card4};
+    	int[] cardRand = new int[4];
+    	for(int counter = 0; counter < 4; counter ++)
+    	{
+    		cardRand[counter] = (int) (Math.floor(Math.random() * 13) + 1);
+    		fourCardStack[counter].setImage(new ImageView("cards/"+cardRand[counter]+imgFields()).getImage());
+    	}
+    /*	int card = (int) (Math.floor(Math.random() * 13) + 1);
     	int cardTwo = (int) (Math.floor(Math.random() * 13) + 1);
     	int cardThree = (int) (Math.floor(Math.random() * 13) + 1);
     	int cardFour = (int) (Math.floor(Math.random() * 13) + 1);
@@ -64,7 +81,7 @@ public class PlayingCardsController {
     	card3.setImage(new ImageView("cards/"+cardThree + imgFields()).getImage());
 
     	card4.setImage(new ImageView("cards/"+cardFour + imgFields()).getImage());
-
+*/
     }
 
 
