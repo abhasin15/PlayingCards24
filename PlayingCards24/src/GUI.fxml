@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -9,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PlayingCardsController">
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PlayingCardsController">
    <children>
       <Pane prefHeight="425.0" prefWidth="585.0">
          <children>
@@ -26,7 +31,7 @@
                   <Font name="System Bold" size="17.0" />
                </font></Button>
             <TextField fx:id="ansField" layoutX="237.0" layoutY="19.0" prefHeight="34.0" prefWidth="182.0" style="-fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #0ab80b;" />
-            <TextField fx:id="entryField" layoutX="194.0" layoutY="369.0" onAction="#input" onKeyPressed="#input" prefHeight="34.0" prefWidth="242.0" style="-fx-border-width: 2; -fx-border-style: solid; -fx-border-color: #0ab80b;" />
+            <TextField fx:id="entryField" layoutX="194.0" layoutY="369.0" prefHeight="34.0" prefWidth="242.0" style="-fx-border-width: 2; -fx-border-style: solid; -fx-border-color: #0ab80b;" />
             <Label fx:id="enterLbl" layoutX="14.0" layoutY="364.0" prefHeight="44.0" prefWidth="161.0" text="Enter an expression:" textFill="#31a155">
                <font>
                   <Font name="System Bold" size="16.0" />
