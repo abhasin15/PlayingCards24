@@ -2,17 +2,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-public class imgFieldsTest {
+public class SwapLoadImgsTest {
 
 	
 	@Test
-	public void imgFieldstest() {
+	public void SwapLoadImgs() {
 		
 		// create new playing cards controller method for junit testing
-		PlayingCardsController imgFieldsTest = new PlayingCardsController();
+		SwapLoadImgs imgFieldsTest = new SwapLoadImgs();
 		
 		// testing loading of cardTypes from controller and imgFields method
-		String cardTypes = imgFieldsTest.imgFields();
+		String cardTypes = imgFieldsTest.randomImgTypeSelector();
 	
 		// test will fail if these values are not equal
 		assertEquals("_of_clubs.png",cardTypes);
