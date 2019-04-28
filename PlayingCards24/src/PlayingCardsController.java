@@ -116,10 +116,6 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 
 
 	}
-	@Override
-	public void handle(ActionEvent event){
-		
-	}
 
 
 
