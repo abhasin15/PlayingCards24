@@ -1,4 +1,6 @@
 import java.util.Random;
+
+import javafx.event.ActionEvent;
 import javafx.scene.image.ImageView;
 /**
  * This class will initially load random images into program
@@ -33,5 +35,6 @@ public class SwapLoadImgs {
 			cardStack[counter].setImage(new ImageView("view/"+cardRand[counter]+randomImgTypeSelector()).getImage());
 			}
 	}
+
 	
 }

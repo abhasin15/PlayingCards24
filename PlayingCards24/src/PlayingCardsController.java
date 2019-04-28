@@ -6,6 +6,7 @@ import java.util.ResourceBundle;
 import java.util.Scanner;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -41,7 +42,8 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 	private ImageView card4;
 	
 	@FXML
-	public void loadImages(ActionEvent event) {   //method call to SwapLoadImgs.java
+	public void loadImages(ActionEvent event) throws Exception
+	{   //method call to SwapLoadImgs.java
 		ImageView fourCardStack[] = {card1,card2,card3,card4};
 		randomCardSelector(fourCardStack);
 	}
@@ -53,7 +55,14 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 	}
 	
 	@FXML
-	void input(KeyEvent event) {		
+	
+			
+		
+			// TODO: handle exception
+		
+		
+	
+	/*void input(KeyEvent event) {		
 			// to hold user input
 			String input;
 			// array for user input
@@ -81,8 +90,8 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 		
 			// close scanner
 			keyboard.close();
-		
-	}
+		*/
+	
 
 
 	// determine if operators entered are valid
@@ -107,8 +116,10 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 
 
 	}
-
-	
+	@Override
+	public void handle(ActionEvent event){
+		
+	}
 
 
 
