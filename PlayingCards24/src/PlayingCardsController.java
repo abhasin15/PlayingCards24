@@ -5,6 +5,9 @@ import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+import javax.xml.bind.ParseConversionEvent;
+
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -55,8 +58,22 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 	}
 	
 	@FXML
+	public void getUserEntry(ActionEvent event) throws Exception
+	{
+		isInt(entryField.getText());
+	}
 	
-			
+	public boolean isInt(String input){
+		try {
+			int userAnswer = Integer.parseInt(input);
+		} catch (NumberFormatException e) {
+			JOptionPane.showMessageDialog(null, "Invalid");
+		}
+		
+		return false;
+		
+	}
+	
 		
 			// TODO: handle exception
 		

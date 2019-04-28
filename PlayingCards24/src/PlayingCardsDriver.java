@@ -13,7 +13,7 @@ public class PlayingCardsDriver extends Application {
 		
 		launch(args);
 	}
-
+	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Parent g=FXMLLoader.load(getClass().getResource("view/PlayingCardsGUI.fxml")); //makes connection to fxml file
