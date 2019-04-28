@@ -1,6 +1,10 @@
 import java.util.Random;
-
 import javafx.scene.image.ImageView;
+/**
+ * This class will initially load random images into program
+ * and will swap images
+ * @author Ayush
+ */
 
 public class SwapLoadImgs {
 	String rand = " ";

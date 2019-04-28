@@ -17,6 +17,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 
 
 
@@ -43,35 +44,19 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 	private ImageView card4;
 	
 	@FXML
-	public void loadImages(ActionEvent event) {
+	public void loadImages(ActionEvent event) {   //method call to SwapLoadImgs.java
 		ImageView fourCardStack[] = {card1,card2,card3,card4};
 		randomCardSelector(fourCardStack);
 	}
 
 	@Override
-	public void initialize(URL location, ResourceBundle resources) {
+	public void initialize(URL location, ResourceBundle resources) { //method call to SwapLoadImgs.java 
 	ImageView fourCardStack[] = {card1,card2,card3,card4};
 	initialImgsSelector(fourCardStack);
 	}
 	
 	@FXML
-	public void verifyAns(ActionEvent event){
-		
-		String num = entryField.getText();
-		System.out.println(num);
-	}
-	
-	
-		
-		
-	
-	//on key pressed input
-	//action input
-
-
-
-		// gather input from text field 
-		void input(KeyEvent event) {		
+	void input(KeyEvent event) {		
 			// to hold user input
 			String input;
 			// array for user input
@@ -99,8 +84,8 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 		
 			// close scanner
 			keyboard.close();
-		}
-
+		
+	}
 
 
 	// determine if operators entered are valid
@@ -126,14 +111,9 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 
 	}
 
+	
 
 
 
-/*@Override
-public void initialize(URL location, ResourceBundle resources) {
-	ImageView fourCardStack[] = {card1,card2,card3,card4};
-	initialImgsSelector(fourCardStack);
-	}
-	*/
 }
 
