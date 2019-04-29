@@ -4,6 +4,9 @@ import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.Scanner;
+import java.util.StringTokenizer;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.swing.JOptionPane;
 import javax.xml.bind.ParseConversionEvent;
@@ -58,21 +61,32 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 	}
 	
 	@FXML
-	public void getUserEntry(ActionEvent event) throws Exception
+	public void validateUserEntry(ActionEvent event) throws Exception
 	{
-		isInt(entryField.getText());
+		isExpression(entryField.getText());
 	}
 	
-	public boolean isInt(String input){
+	public boolean isExpression(String input){
 		try {
-			int userAnswer = Integer.parseInt(input);
+			//StringTokenizer expBuilder = new StringTokenizer(input, "()+-/*" );
+			Pattern p = Pattern.compile("[a-zA-Z]+");
+			Matcher m = p.matcher(input);
+			if(m.find()){
+					JOptionPane.showMessageDialog(null, "Invalid: " + input + " is not an expression in numeric form");
+					entryField.clear();
+					
+			}
+			return false;
 		} catch (NumberFormatException e) {
-			JOptionPane.showMessageDialog(null, "Invalid");
+			String expression = input;
+			System.out.println(input);
+			return true;
 		}
-		
-		return false;
-		
 	}
+		 
+		
+		
+	
 	
 		
 			// TODO: handle exception
