@@ -74,14 +74,23 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 			if(m.find()){
 					JOptionPane.showMessageDialog(null, "Invalid: " + input + " is not an expression in numeric form");
 					entryField.clear();
-					
+					m.reset();
 			}
+			p = Pattern.compile("[\\#\\.\\%&]{0,13}");
+			m = p.matcher(input);
+			if(m.find()){
+					JOptionPane.showMessageDialog(null, "Please enter a valid numeric expression!");
+					entryField.clear();
+					m.reset();
+			}
+			
 			return false;
 		} catch (NumberFormatException e) {
-			String expression = input;
-			System.out.println(input);
-			return true;
+			
+			
 		}
+		return true;
+		
 	}
 		 
 		
