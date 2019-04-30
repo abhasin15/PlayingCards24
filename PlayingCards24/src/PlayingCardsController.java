@@ -52,6 +52,7 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 	{   //method call to SwapLoadImgs.java
 		ImageView fourCardStack[] = {card1,card2,card3,card4};
 		randomCardSelector(fourCardStack);
+		entryField.clear();
 	}
 
 	@Override
@@ -66,9 +67,8 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 		isExpression(entryField.getText());
 	}
 	
-	public boolean isExpression(String input){
+	public void isExpression(String input){
 		try {
-			//StringTokenizer expBuilder = new StringTokenizer(input, "()+-/*" );
 			Pattern p = Pattern.compile("[a-zA-Z]+");
 			Matcher m = p.matcher(input);
 			if(m.find()){
@@ -76,24 +76,37 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 					entryField.clear();
 					m.reset();
 			}
-			p = Pattern.compile("[\\~\\!\\@\\#\\$\\%\\^\\&\\{\\}\\]\\[\\:\\;'\\'\\?\\>\\<\\,\\s]"); //\#\\.\\%&]{0,13}
+			p = Pattern.compile("[^0-9\\+\\(\\)\\+\\-\\/\\*]");
 			m = p.matcher(input);
 			if(m.find()){
 					JOptionPane.showMessageDialog(null, "Please enter a valid numeric expression!");
 					entryField.clear();
 					m.reset();
 			}
-			
-			return false;
-		} catch (NumberFormatException e) {
-			
-			
-		}
-		return true;
+			p = Pattern.compile("^[\\*\\+\\-\\)\\/]");
+			m = p.matcher(input);
+			if(m.find()){
+				JOptionPane.showMessageDialog(null, "Invalid: the first character cannot be + - / x ) ");
+				entryField.clear();
+				m.reset();
+			}
+			else{
+				String validInput = input;
+				logic(validInput);
+			}
+					
+		} catch (NumberFormatException e) 
+			{
+				e.printStackTrace();
+			}
+	
+	}
+	
+	public void logic(String s)
+	{
 		
 	}
-		 
-		
+	
 		
 	
 	
