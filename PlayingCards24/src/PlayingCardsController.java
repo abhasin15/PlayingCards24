@@ -76,7 +76,7 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 					entryField.clear();
 					m.reset();
 			}
-			p = Pattern.compile("[\\~\\!\\@\\#\\$\\%\\^\\&]"); //\#\\.\\%&]{0,13}
+			p = Pattern.compile("[\\~\\!\\@\\#\\$\\%\\^\\&\\{\\}\\]\\[\\:\\;'\\'\\?\\>\\<\\,\\s]"); //\#\\.\\%&]{0,13}
 			m = p.matcher(input);
 			if(m.find()){
 					JOptionPane.showMessageDialog(null, "Please enter a valid numeric expression!");
