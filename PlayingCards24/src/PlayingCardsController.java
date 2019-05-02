@@ -71,9 +71,9 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 	
 	@FXML
 	public void validateUserEntry(ActionEvent event) throws Exception
-	{
+		{
 		isExpression(entryField.getText());
-	}
+		}
 	
 	public void isExpression(String input){
 		try {
@@ -83,21 +83,21 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 					JOptionPane.showMessageDialog(null, "Invalid: " + input + " is not an expression in numeric form");
 					entryField.clear();
 					m.reset();
-			}
+				}
 			p = Pattern.compile("[^0-9\\+\\(\\)\\+\\-\\/\\*]");
 			m = p.matcher(input);
 			if(m.find()){
 					JOptionPane.showMessageDialog(null, "Please enter a valid numeric expression!");
 					entryField.clear();
 					m.reset();
-			}
+				}
 			p = Pattern.compile("^[\\*\\+\\-\\)\\/]");
 			m = p.matcher(input);
 			if(m.find()){
 				JOptionPane.showMessageDialog(null, "Invalid: the first character cannot be + - / x ) ");
 				entryField.clear();
 				m.reset();
-			}
+				}
 			else{
 				String validInput = input;
 				logic(validInput);

@@ -64,7 +64,7 @@ public class SwapLoadImgs {
 
         }
 		
-	}
+	}   /
 	*/
 	public void initialImgsSelector(ImageView[] cardStack){
 		int[] cardRand = new int[4];
