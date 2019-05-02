@@ -1,4 +1,9 @@
-
+/**
+ * This is the application Controller class which is defined in the PlayingCardsGUI.fxml 
+ * this class is a parent to SwapLoadImgs class which had method definitions of calls that 
+ * are here
+ * @ayush
+ */
 
 import java.net.URL;
 import java.util.Random;
@@ -8,6 +13,9 @@ import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 import javax.swing.JOptionPane;
 import javax.xml.bind.ParseConversionEvent;
 
@@ -27,7 +35,7 @@ import javafx.scene.paint.Color;
 
 public class PlayingCardsController extends SwapLoadImgs implements Initializable {
 
-	//static String rand = "";
+	
 
 	@FXML
 	private Button solveTxt,clrTxt,chkTxt; //ayush
@@ -104,12 +112,22 @@ public class PlayingCardsController extends SwapLoadImgs implements Initializabl
 	
 	public void logic(String s)
 	{
-		
+		ScriptEngineManager checker = new ScriptEngineManager();
+		        ScriptEngine engine = checker.getEngineByName("JavaScript");
+		        try{ 
+		            Object textboxText = engine.eval(s);  //this is where excution is taking place
+		            String userTotal = textboxText.toString();
+		            String correctAns = "24";
+		            System.out.println(userTotal);
+		            if(userTotal.equals(correctAns))
+		            {
+		            	JOptionPane.showMessageDialog(null, "Good Job! Correct Answer");
+		            }
+		           
+		        }catch (ScriptException e)
+		        { }
 	}
-	
-		
-	
-	
+
 		
 			// TODO: handle exception
 		
