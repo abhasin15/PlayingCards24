@@ -10,16 +10,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="Input" project="PlayingCards24" file="/PlayingCards24/src/Input.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="466" y="197"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="SwapLoadImgs" project="PlayingCards24" 
+  <class id="2" language="java" name="SwapLoadImgs" project="PlayingCards24" 
     file="/PlayingCards24/src/SwapLoadImgs.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="658" y="233"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -28,12 +19,12 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <package id="4" language="java" name="cards" project="PlayingCards24" file="/PlayingCards24/src/cards" binary="false" 
+  <package id="3" language="java" name="cards" project="PlayingCards24" file="/PlayingCards24/src/cards" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="856" y="182"/>    
     <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
   </package>  
-  <class id="5" language="java" name="PlayingCardsController" project="PlayingCards24" 
+  <class id="4" language="java" name="PlayingCardsController" project="PlayingCards24" 
     file="/PlayingCards24/src/PlayingCardsController.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="650" y="579"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -42,7 +33,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="PlayingCardsDriver" project="PlayingCards24" 
+  <class id="5" language="java" name="PlayingCardsDriver" project="PlayingCards24" 
     file="/PlayingCards24/src/PlayingCardsDriver.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1013" y="215"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -51,7 +42,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="InputTest" project="PlayingCards24" file="/PlayingCards24/src/InputTest.java" 
+  <class id="6" language="java" name="InputTest" project="PlayingCards24" file="/PlayingCards24/src/InputTest.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1176" y="206"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -60,12 +51,12 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <package id="8" language="java" name="view" project="PlayingCards24" file="/PlayingCards24/src/view" binary="false" 
+  <package id="7" language="java" name="view" project="PlayingCards24" file="/PlayingCards24/src/view" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1323" y="182"/>    
     <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
   </package>  
-  <class id="9" language="java" name="PlayingCardsControllerTest" project="PlayingCards24" 
+  <class id="8" language="java" name="PlayingCardsControllerTest" project="PlayingCards24" 
     file="/PlayingCards24/src/PlayingCardsControllerTest.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="318" y="405"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -74,9 +65,9 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="10">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="3"/>  
+  <generalization id="9">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
